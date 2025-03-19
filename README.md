@@ -1,2 +1,0 @@
-# ZhizhengWang
-CV Homepage
