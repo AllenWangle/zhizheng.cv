@@ -2,252 +2,230 @@
   "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
 <head>
-<meta name="generator" content="jemdoc, see http://jemdoc.jaboc.net/" />
-<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
-<link rel="stylesheet" href="jemdoc.css" type="text/css" />
-<link rel="shortcut icon" href="favicon.ico" />
-<link rel="bookmark" href="favicon.ico" type="image/x-icon"　/>
-<title>Xiaokun Zhang (张晓堃)</title>
+  <meta name="generator" content="jemdoc, see http://jemdoc.jaboc.net/"/>
+  <meta http-equiv="Content-Type" content="text/html;charset=utf-8"/>
+  <link rel="stylesheet" href="jemdoc.css" type="text/css"/>
+  <link rel="shortcut icon" href="favicon.ico"/>
+  <title>Zhizheng Wang</title>
+  <script>
+    function showSection(sectionId) {
+      // Hide all sections
+      var sections = document.getElementsByClassName("section");
+      for (var i = 0; i < sections.length; i++) {
+        sections[i].classList.remove("active");
+      }
+
+      // Show the selected section
+      document.getElementById(sectionId).classList.add("active");
+
+      // Update active tab styling
+      var tabs = document.getElementsByClassName("tablink");
+      for (var j = 0; j < tabs.length; j++) {
+        tabs[j].classList.remove("active");
+      }
+      document.getElementById(sectionId + "-tab").classList.add("active");
+    }
+  </script>
 </head>
-<body>
-<table summary="Table for page layout." id="tlayout">
-<tr valign="top">
-<td id="layout-menu">
-<div class="menu-category">Menu</div>
-<div class="menu-item"><a href="index.html" class="current">Home</a></div>
-<div class="menu-item"><a href="https://scholar.google.com/citations?user=TQS4VgcAAAAJ&hl=zh-CN">Google Scholar</a></div>
-<div class="menu-item"><a href="https://github.com/Zhang-xiaokun">My GitHub</a></div>
-<div style="display: none" class="menu-item"><a href="http://snailwish.com/">个人博客</a></div>
-</td>
-<td id="layout-content">
-<div id="toptitle">
-<h1>Dr.Xiaokun Zhang (张晓堃)</h1>
+<body onload="showSection('home')">
+
+<!-- Navigation Bar -->
+<div class="navbar">
+  <a id="home-tab" class="tablink active" onclick="showSection('home')">Home</a>
+  <a id="publications-tab" class="tablink" onclick="showSection('publications')">Publications</a>
+  <a id="education-tab" class="tablink" onclick="showSection('education')">Biographical Information</a>
 </div>
-<table class="imgtable"><tr><td>
-<a href="https://Zhang-Xiaokun.github.io/"><img src="photos/mine.jpg" alt="Xiaokun" width="131px" height="160px" /></a>&nbsp;</td>
-<td align="left">
-    <p>Dr. Xiaokun Zhang,<br />
-Postdoc at City University of Hongkong,<br />
-E-mail: <a href="dawnkun1993@gmail.com">dawnkun1993@gmail.com
-    </p>
-</td></tr></table>
-<h2>About me</h2>
-<p>I'm currently a postdoc research fellow at City University of HongKong working with <a href="https://allenjack.github.io/">Prof.Chen Ma</a> and <a href="https://kedema.org/">Prof. Kede Ma</a>. I obtained my Phd, Master and Bachelor degree from Dalian University of Technology, fortunately supervised by <a href="https://scholar.google.com/citations?hl=zh-CN&user=kV68br0AAAAJ">Prof. Hongfei Lin</a>. I also have a wonderful time working with <a href="https://www.psu.edu/">Prof. Fenglong Ma</a> at the Pennsylvania State University </p>
-<p>Welcome to any kind of collaborations. Let's do some interesting and meaningful works for the beautiful world!</p>  
-<h2>Research Interests</h2>
-<ul>
-<li><p>Artificial Intelligence</p>
-</li>
-<li><p>Data Mining</p>
-</li>
-<li><p>Recommender Systems</p>
-</li>
-</ul>
 
-<h2>NEWS!</h2>
-<ul>
-  <li>
-    <p><img src="photos/new.jpg" alt="alt text" width="50px" height="25px" />2025.1, One paper is accepted by <b>NAACL 2025</b> about affective computing, and one paper is accepted by <b>SDM 2025</b> about data valuation in recommender systems. Congratulations to Haohao and Renqi!</p>
-</li>
-  <li>
-    <p><img src="photos/new.jpg" alt="alt text" width="50px" height="25px" />2024.10, I obtained the Award of Outstanding Doctoral Thesis of Chinese Information Processing Society (CIPS)! Thank you to everyone who has provided support throughout my doctoral studies!</p>
-</li>
-  <li>
-    <p><img src="photos/new.jpg" alt="alt text" width="50px" height="25px" />2024.7, One paper is selected as Best paper nominees in SIGIR24'. Thansks to SIGIR's committee!</p>
-</li>
-<!--   <li>
-    <p><img src="photos/new.jpg" alt="alt text" width="50px" height="25px" />2024.3, Two long papers have been accepted by <b>SIGIR 2024</b> on Recommender Systems. Thanks to all collaborators!</p>
-</li> -->
-<!--   <li>
-    <p><img src="photos/new.jpg" alt="alt text" width="50px" height="25px" />2024.7, I'm invited to give a talk about Multimodal recommendations at VALSE Webinar!</p>
-</li> -->
-<!--   <li>
-    <p><img src="photos/new.jpg" alt="alt text" width="50px" height="25px" />2024.5, one paper accepted by <b>KDD 2024</b> and another one accepted by <b>ACL 2024</b>. Congratulations to Yuan and Xiaochen!</p>
-</li> -->
+<!-- HOME SECTION -->
+<div id="home" class="section active container">
+  <div class="profile-container">
+    <!-- Left column: Profile Image -->
+    <div class="profile-image">
+      <!-- Replace 'photos/mine.jpg' with your actual photo path -->
+      <img src="photos/zhizheng.jpg" alt="Zhizheng Wang" />
+    </div>
 
-<!-- <li>
-    <p><img src="photos/new.jpg" alt="alt text" width="50px" height="25px" />2024.3, One paper has been accepted by <b>COLING 2024</b> on Toxic Language Detection. Congratulations to JunYu!</p>
-</li> -->
-  
-<!-- <li>
-    <p><img src="photos/new.jpg" alt="alt text" width="50px" height="25px" />2023.10, I'm fortunately working with Prof.Fenglong Ma at the Pennsylvania State University as a visiting scholar!</p>
-</li> -->
-  
-<!--   <li>
-    <p><img src="photos/new.jpg" alt="alt text" width="50px" height="25px" />2023.10, One paper has been accepted by <b>TOIS</b> on Session-based Recommendation.</p>
-</li> -->
-<!--     <li>
-        <p><img src="photos/new.jpg" alt="alt text" width="50px" height="25px" />2023.9, I achieve National Scholarship for Doctoral Students!</p>
-    </li> -->
-<!-- <li><p><img src="photos/new.jpg" alt="alt text" width="50px" height="25px" />2023.8, One paper has been accepted by <b>TKDE</b> on Multi-modal Session-based Recommendation.</p>
-</li> -->
-<!-- <li><p><img src="photos/new.jpg" alt="alt text" width="50px" height="25px" />2023.5, One paper on IP&M achieves IP&M 2022 Ph.D. Paper Award Honorable Mentions. Thanks to IP&M!</p>
-</li> -->
+    <!-- Middle column: Name, Title, Group, Button -->
+    <div class="profile-info">
+      <h1>Zhizheng Wang, Ph.D.</h1>
+      <h2>Visiting Fellow (Postdoc)</h2>
+      <p><strong>NIH/NLM/DIR</strong><br/>Large Language Models<br/>Knowledge Representation and Reasoning<br/>Data Mining (Network Embedding)</p>
+      <!-- <button class="view-site-btn">VIEW SITE</button> -->
+    </div>
 
-<!-- <li><p><img src="photos/new.jpg" alt="alt text" width="50px" height="25px" />2022.3.31, One paper has been accepted by <b>SIGIR 2022</b> on session-based recommendation!</p>
-</li>
-<li><p><img src="photos/new.jpg" alt="alt text" width="50px" height="25px" />2022.3.25, One paper has been accepted by <b>IPM 2022</b> on session-based recommendation!</p>
-</li> -->
+    <!-- Right column: Address, Phone, Email -->
+    <div class="profile-contact">
+      <p>Building 38A, 9S912F<br/>
+        8600 Rockville Pike<br/>
+        Bethesda, MD 20894, USA</p>
+    <!-- <p><strong>Phone:</strong> 301-594-7099</p> -->
+      <p>
+        <!-- Email icon + link -->
+        <img src="icons/email.jpg" alt="Email" class="contact-icon" />
+        <!-- <strong>Email:</strong> -->
+        <a href="mailto:zhizheng.wang@nih.gov">zhizheng.wang@nih.gov</a>
+      </p>
 
-</ul>
+      <p>
+        <!-- LinkedIn icon + link -->
+        <img src="icons/linkedin.jpg" alt="LinkedIn" class="contact-icon" />
+        <a href="https://www.linkedin.com/in/zhizheng-wang-004071310/" target="_blank">LinkedIn</a>
+        <!-- X (Twitter) icon + link -->
+        <img src="icons/x.jpg" alt="X" class="contact-icon" />
+        <a href="https://x.com/Zhizh_wang" target="_blank">Twitter</a>
+      </p>
+      
+    </div>
+  </div>
 
-<h2>Publications </h2>
-  <ol>
-
-<li>
-    <p> Disentangling ID and Modality Effects for Session-based Recommendation </p>
-    <p> <b>Xiaokun Zhang</b>, Bo Xu, Zhaochun Ren, Xiaochen Wang, Hongfei Lin* and Fenglong Ma</p>
-    <p> <i>The 47th International ACM SIGIR Conference on Research and Development in Information Retrieval</i>.
-        July 23–27, 2024, Washington D.C., USA. <b>SIGIR 2024 (CCF A, full paper).</b></p>
-  <p><b>Best paper nominees</b></p>
-    <p>[<a href="https://arxiv.org/abs/2404.12969">pdf</a>]
-        [<a href="https://https://github.com/Zhang-xiaokun/DIMO">code</a>]
-        [<a href="https://zhuanlan.zhihu.com/p/695966666">zhihu</a>]
-    </p>
-</li>
-
-<li>
-    <p> FineRec: Exploring Fine-grained Sequential Recommendation </p>
-    <p> <b>Xiaokun Zhang</b>, Bo Xu, Youlin Wu, Yuan Zhong, Hongfei Lin* and Fenglong Ma</p>
-    <p> <i>The 47th International ACM SIGIR Conference on Research and Development in Information Retrieval</i>.
-        July 23–27, 2024, Washington D.C., USA. <b>SIGIR 2024 (CCF A, full paper).</b></p>
-    <p>[<a href="https://arxiv.org/abs/2404.12975">pdf</a>]
-        [<a href="https://github.com/Zhang-xiaokun/FineRec">code</a>]
-        [<a href="https://zhuanlan.zhihu.com/p/697515892">zhihu</a>]
-    </p>
-</li>
-  
-<li>
-    <p> Bi-Preference Learning Heterogeneous Hypergraph Networks for Session-based Recommendation </p>
-    <p> <b>Xiaokun Zhang</b>, Bo Xu, Fenglong Ma, Chenliang Li, Yuan Lin and Hongfei Lin*</p>
-    <p> <i>ACM Transactions on Information Systems.</i> <b>TOIS 2023 (CCF A, IF 5.6).</b></p>
-    <p>
-       [<a href="https://arxiv.org/abs/2311.01125">pdf</a>]
-        [<a href="https://github.com/Zhang-xiaokun/BiPNet">code</a>]
-<!--         [<a href="https://zhuanlan.zhihu.com/p/516509831">zhihu</a>] -->
-    </p>
-</li>
-  
-<li>
-    <p> Beyond Co-occurrence: Multi-modal Session-based Recommendation </p>
-    <p> <b>Xiaokun Zhang</b>, Bo Xu, Fenglong Ma, Chenliang Li, Liang Yang and Hongfei Lin*</p>
-    <p> <i>IEEE Transactions on Knowledge and Data Engineering.</i> <b>TKDE 2023 (CCF A, IF 9.235).</b></p>
-    <p>
-        [<a href="https://arxiv.org/abs/2309.17037">pdf</a>]
-        [<a href="https://github.com/Zhang-xiaokun/MMSBR">code</a>]
-        [<a href="https://zhuanlan.zhihu.com/p/663846624">zhihu</a>]
-    </p>
-</li>
-
-<li>
-    <p> Price DOES Matter! Modeling Price and Interest Preferences in Session-based Recommendation </p>
-    <p> <b>Xiaokun Zhang</b>, Bo Xu, Liang Yang, Chenliang Li, Fenglong Ma, Haifeng Liu and Hongfei Lin*</p>
-    <p> <i>The 45th International ACM SIGIR Conference on Research and Development in Information Retrieval</i>.
-        July 11–15, 2022, Madrid, Spain. <b>SIGIR 2022 (CCF A, full paper).</b></p>
-    <p>[<a href="https://doi.org/10.1145/3477495.3532043">pdf</a>]
-        [<a href="https://github.com/Zhang-xiaokun/CoHHN">code</a>]
-        [<a href="https://zhuanlan.zhihu.com/p/516509831">zhihu</a>]
-    </p>
-</li>
-</ol>
-<p><b>Note</b>: * indicates the corresponding author.<a href="https://scholar.google.com/citations?user=TQS4VgcAAAAJ&hl=zh-CN">Full list of publications in Google Scholar.</a></p>
-
-
-
-<h2>Academic Service</h2>
-    <p><b>Conference PC Member</b></p>
-    <ul>
-    <li>
-        <p>KDD 2025, SIGIR 2025&2023, ACL 2025&2023, TheWebConf 2025&2024, AAAI 2025&2024&2023, COLING 2025&2024&2022, DASFAA 2024, CIKM 2024, EMNLP 2023, etc.</p>
-    </li>
-    </ul>
-    <p><b>Journal Reviewer</b></p>
-    <ul>
-    <li>
-        <p>TKDE, TOIS, TNNLS, IPM, TASLP, KAIS, KBS, Multimedia Systems, ESWA, Applied Intelligence, etc.</p>
-    </li>
-<!--       <li>
-        <p>ACM Transactions on Information Systems, TOIS</p>
-    </li>
-    <li>
-        <p>IEEE Transactions on Neural Networks and Learning Systems, TNNLS</p>
-    </li>
-    <li>
-        <p>Information Processing & Management, IPM</p>
-    </li>
-    <li>
-        <p>IEEE Transactions on Audio, Speech and Language Processing, TASLP</p>
-    </li>
-      <li>
-        <p>World Wide Web</p>
-    </li>
-    <li>
-        <p>Knowledge and Information Systems, KAIS</p>
-    </li>
-      <li>
-        <p>Knowledge-Based Systems, KBS</p>
-    </li>
-    <li>
-        <p>Multimedia Systems</p>
-    </li> -->
-<!--     <li>
-        <p>ACM Transactions on Asian and Low Resource Language Information Processing, TALLIP</p>
-    </li>
-    <li>
-        <p>Expert Systems With Applications, ESWA</p>
-    </li>
-    <li>
-        <p>The Journal of Supercomputing, TJSC</p>
-    </li>
-    <li>
-        <p>Scientific Reports</p>
-    </li> -->
-    </ul>
-
-  <p><b>Invited Talk</b></p>
-    <ul>
-    <li>
-        <p>2024, July, Multimodal recommendations at VALSE Webinar.</p>
-    </li>
-    </ul>
-
-<h2>Experiences</h2>
-    <p> -> 2024.7-Now, Postdoc, Department of Computer Science, <a href="https://www.cityu.edu.hk/">City University of Hong Kong</a>.</p>
-    <p> -> 2020.9-2024.6, PhD, School of Computer Science and Technology, <a href="https://www.dlut.edu.cn/">Dalian University of Technology</a>.</p>
-    <p> -> 2023.10-2024.5, Visiting scholar, College of Information Sciences and Technology , <a href="https://www.psu.edu/">Pennsylvania State University</a>.</p>
-    <p> -> 2018.9-2020.6, Master, School of Computer Science and Technology, <a href="https://www.dlut.edu.cn/">Dalian University of Technology</a>.</p>
-    <p> -> 2016.6-2018.6, Software Engineer, working in a Startups.</p>
-    <p> -> 2012.9-2016.6, Bachelor Degree, School of Computer Science and Technology, <a href="https://www.dlut.edu.cn/">Dalian University of Technology</a></p>
-<h2>Awards</h2>
+  <h2>Personal Statement</h2>
+  <p>
+    At present, I am a <strong>Visiting Follow (postdoc)</strong> at National Institutes of Health (NIH) with <a href="https://x.com/Zhizh_wang" target="_blank">Dr. Zhiyong Lu</a>. <br/>
+    My research background is computer science. My research interests include <strong>Large Language Models (LLMs)</strong>, <strong>Knowledge Representation and Reasoning (KRR)</strong>, and <strong>Data Mining</strong> (e.g., Network Embedding).
+    My long-term goal is to develop AI-based computational methods that incorporate structural knowledge from multiple resources to enhance biomedical knowledge discovery and improve healthcare outcomes. <br/>
+    My current research topics include:
+  </p>
   <ul>
-        <li><p>Outstanding Doctoral Thesis of Chinese Information Processing Society (CIPS), 2024.</p>
-        <li><p>Best paper nominees at SIGIR 2024.</p>
-        <li><p>Outstanding Graduates, Liaoning Province, 2024.</p>
-        <li><p>Outstanding Graduates, Dalian University of Technology, 2024.</p>
-        <li><p>National Scholarship for Doctoral Students, 2023.</p>
-        <li><p>Excellent Doctoral Candidate of Dalian University of Technology, 2023.</p>
-        <li><p>IP&M 2022 Ph.D. Paper Award Honorable Mentions.</p>
-        <li><p>Outstanding Student Prize Scholarship of Baosteel, 2022.</p>
-        <li><p>Excellent Doctoral Candidate of Dalian University of Technology, 2022.</p>
-        <li><p>Excellent Doctoral Candidate of Dalian University of Technology, 2021.</p>
-        <li><p>Excellent postgraduate of Dalian University of Technology, 2019.</p>
-        <li><p>First Prize Scholarship for Doctoral Candidate of Dalian University of Technology, 2022-2023.</p>
-        <li><p>First Prize Scholarship for Postgraduate of Dalian University of Technology, 2018-2020.</p>
+    <li>Application of LLMs on Gene Set Analysis (<strong>Gene LLM</strong>) <img src="icons/focus.jpg" alt="focus" class="contact-icon"/> </li>
+    <li>Reinforcement Learning with Hierarchical Rewards in LLMs (<strong>LLM Finetune </strong>) <img src="icons/focus.jpg" alt="focus" class="contact-icon"/> </li>
+    <li>Multi-modal Biomedicine Knowledge Graph Construction (<strong>Biomedical KG</strong>)</li>
+    <li>Continual & Incremental Representation for Structured Data (<strong>Continual KR</strong>)</li>
+  </ul>
 
-    </ul>
+  <h2>Selected Publications</h2>
+  <ul>
+    <li>Wang Z, Jin Q, Wei CH, Tian S, Lai PT, Zhu Q, Day CP, Ross C, Lu Z. "GeneAgent: self-verification language agent for gene set analysis using domain databases." <i>Nature Methods</i>, to appear.</li> [<a href="https://arxiv.org/abs/2405.16205" target="_blank">Paper</a>] [<a href="https://github.com/ncbi-nlp/GeneAgent" target="_blank">Code</a>]
+    <li>Wang Z, Sun Y, Yang Z, Yang L, Lin H. "Temporal Network Embedding Enhanced With Long-Range Dynamics and Self-Supervised Learning." <i>IEEE Transactions on Neural Networks and Learning Systems.</i>, 2024.</li> [<a href="https://ieeexplore.ieee.org/abstract/document/10499709" target="_blank">Paper</a>] [<a href="https://github.com/AllenWangle/LongTNE" target="_blank">Code</a>]
+    <li>Wang Z, Sun Y, Hu X, Zhao J, Yang Z, Lin H. "A semantic network encoder for associated fact prediction." <i>IEEE Transactions on Knowledge and Data Engineering.</i>, 2021.</li> [<a href="https://ieeexplore.ieee.org/abstract/document/9330793" target="_blank">Paper</a>] [<a href="https://github.com/AllenWangle/SemNE" target="_blank">Code</a>]
+  </ul>
 
-  
-<h2>Vistors</h2>
-<div style="width: 400px">
-    <script type='text/javascript' id='clustrmaps' src='//cdn.clustrmaps.com/map_v2.js?cl=ffffff&w=a&t=tt&d=u4K_ENjFKQjBGC0PhfO4NzqocsoIOKMNmeePzkEMWCA'></script>
+  <h2>Honors and Awards</h2>
+  <ul>
+    <li> 2024 – FARE2025 Awards, National Institutes of Health (NIH) </li>
+    <li> 2023 – Excellent Doctoral Dissertation Scholarship, Dalian University of Technology (DUT) </li>
+    <li> 2022 – Outstanding Doctoral Student, Dalian University of Technology (DUT) </li>
+    <li> 2020 – Best Paper Awards, Chinese Information Processing Society of China (CHIP) </li>
+  </ul>
+
+  <!-- <h2>Academic Service</h2>
+  <ul>
+    <li> Reviewer of Journals (part): Nature Methods, TKDE, Bioinformatics, KBS, and JMIR </li>
+    <li> Reviewer of Conferences (part): ACL, EMNLP, CONLING, and BIBM </li>
+  </ul> -->
 </div>
-<h2></h2>
-<p>Updated at Feb, 2025</p>
-<p style="display: none"><br />
-<a href="cv/cv.pdf">A brief cv</a>.
-</p>
-</td>
-</tr>
-</table>
+
+<!-- PUBLICATIONS SECTION -->
+<div id="publications" class="section container">
+  <h1>Publications</h1>
+
+  <h2>Medical Journals</h2>
+  <ul>
+    <li>Wang, et al. "GeneAgent: self-verification language agent for gene set analysis using domain databases." <i>Nature Methods</i>, to appear.</li>
+    <li>Chen, et al. "Large language models in biomedical natural language processing: benchmarks, baselines, and recommendations." <i>Nature Communications</i>, to appear.</li>
+    <li>Wei, et al. "PubTator 3.0: an AI-powered literature resource for unlocking biomedical knowledge." <i>Nucleic Acids Res.</i>, 2024.</li>
+    <li>Jin, et al. "Agentmd: Empowering language agents for risk prediction with large-scale clinical tool learning." <i>arXiv</i>, 2023.</li>
+    <li>Wang, et al. "Epidemiologic information discovery from open-access COVID-19 case reports via pretrained language model." <i>IScience</i>, 2022.</li>
+    <!-- Add more as needed -->
+  </ul>
+
+  <h2>Computer Science Journals</h2>
+  <ul>
+    <li>Wang, et al. "Continual learning with high-order experience replay for dynamic network embedding." <i>Pattern Recognition</i>, 2025.</li>
+    <li>Wang, et al. "Temporal Network Embedding Enhanced With Long-Range Dynamics and Self-Supervised Learning." <i>IEEE TNNLS</i>, 2024.</li>
+    <li>Wang, et al. "A semantic network encoder for associated fact prediction." <i>IEEE TKDE</i>, 2021.</li>
+    <!-- <li>Fiorini et al., "ToxViz: a web-based text mining tool for assisting bioannotation," <i>Nucleic Acids Res</i>, 2019.</li> -->
+    <!-- Add more as needed -->
+  </ul>
+
+  <h2>Computer Science Conferences</h2>
+  <ul>
+    <li>Ning, et al. "OD-RTE: a one-stage object detection framework for relational triple extraction." <i>ACL (Long Paper)</i>, 2023.</li>
+    <li>Ning, et al. "ODEE: A one-stage object detection framework for overlapping and nested event extraction." <i>IJCAI</i>, 2023.</li>
+    <li>Ning, et al. "Two Languages Are Better than One: Bilingual Enhancement for Chinese Named Entity Recognition." <i>COLING</i>, 2022.</li>
+    <li>Wang, et al. "A Weak Supervised Learning Method for Essential Protein Detection Based on STRING Database and Learning Representation." <i>IEEE BIBM</i>, 2018.</li>
+    <!-- Add more as needed -->
+  </ul>
+
+  A full publication list could be find at <a href="https://scholar.google.com/citations?user=2lyIfFYAAAAJ&hl=en" target="_blank">Google Scholar</a>.
+</div>
+
+<!-- Research SECTION -->
+<div id="education" class="section container">
+  <h1>Biographical Information</h1>
+
+  <h2>Research</h2>
+  <table class="education-table">
+    <thead>
+      <tr>
+        <th>Institution and Location</th>
+        <th>Job Title </th>
+        <th>Start Date </th>
+        <th>Completion Date </th>
+        <th>Department</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>National Institutes of Health</td>
+        <td>Visiting Fellow (Postdoc)</td>
+        <td>09/2023</td>
+        <td>Present</td>
+        <td>National Library of Medicine</td>
+      </tr>
+      <!-- <tr>
+        <td>Dalian University of Technology</td>
+        <td>M.S.</td>
+        <td>09/2016</td>
+        <td>06/2018</td>
+        <td>Computer Science and Technology</td>
+      </tr>
+      <tr>
+        <td>Qingdao University of Technology</td>
+        <td>B.S.</td>
+        <td>09/2012</td>
+        <td>06/2016</td>
+        <td>Computer Science and Technology</td>
+      </tr> -->
+    </tbody>
+  </table>
+
+  <h2>Education</h2>
+  <table class="education-table">
+    <thead>
+      <tr>
+        <th>Institution and Location</th>
+        <th>Degree </th>
+        <th>Start Date </th>
+        <th>Completion Date </th>
+        <th>Field of Study</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Dalian University of Technology</td>
+        <td>Ph.D.</td>
+        <td>09/2018</td>
+        <td>06/2023</td>
+        <td>Computer Science and Technology</td>
+      </tr>
+      <tr>
+        <td>Dalian University of Technology</td>
+        <td>M.S.</td>
+        <td>09/2016</td>
+        <td>06/2018</td>
+        <td>Computer Science and Technology</td>
+      </tr>
+      <tr>
+        <td>Qingdao University of Technology</td>
+        <td>B.S.</td>
+        <td>09/2012</td>
+        <td>06/2016</td>
+        <td>Computer Science and Technology</td>
+      </tr>
+    </tbody>
+  </table>
+
+</div>
+
 </body>
 </html>
